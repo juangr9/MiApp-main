@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Formulario de Alta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre" name="nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Correo</ion-label>
+    <ion-input [(ngModel)]="correo" name="correo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Contraseña</ion-label>
+    <ion-input [(ngModel)]="contrasena" name="contrasena" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="crearUsuario()">Crear Usuario</ion-button>
+</ion-content>
